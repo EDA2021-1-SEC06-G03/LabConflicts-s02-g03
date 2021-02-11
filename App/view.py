@@ -9,7 +9,7 @@
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * (at your option) any later version. 
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -43,6 +43,7 @@ def printMenu():
     print("1- Cargar Libros")
     print("2- Cargar Tags")
     # TO-DO: Modificación de Est-1 en el Lab 2
+    # TO-DO: Modificación del Est-1 en el Lab 2
     print("3- Cargar Book-Tags!")
     print("0- Salir")
 
@@ -64,8 +65,8 @@ def loadBookTags():
     """
     Cargar los Tags de libros
     """
-    # TO-DO: Modificación de Est-1 en el Lab 2
-
+    # TO-DO: Modificación del Est-1 en el Lab 2
+    return controller.loadBooksTags('GoodReads/book_tags-small.csv')
 
 """
 Menu principal
@@ -78,8 +79,8 @@ while True:
         books = loadBooks()
         print('Total de libros cargados: ' + str(lt.size(books)))
 
-        # TO-DO: Modificación de Est-1 en el Lab 2
-
+        # TO-DO: Modificación del Est-1 en el Lab 2
+        print('Primer libro cargado: ' + str(lt.firstElement(books)))
 
         # TO-DO: Modificación de Est-2 en el Lab 2
         print('Ultimo libro cargado: ' + str(lt.lastElement(books)))
